@@ -27,9 +27,9 @@ function ResultsContainer({ loading, results }) {
   const totalLabel = results.totalQuantity === 1 ? 'resultado' : 'resultados'
 
   return (
-    <section className="mt-3">
+    <section className="results-section">
       <p className="results-total">
-        Foram encontrados {results.totalQuantity} {totalLabel}.
+        Foram encontrados {results.totalQuantity} {totalLabel}:
       </p>
 
       {CATEGORY_ORDER.map((categoryKey) => {

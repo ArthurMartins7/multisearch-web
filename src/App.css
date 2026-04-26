@@ -29,7 +29,7 @@
 }
 
 .app-header {
-  margin-bottom: 6px;
+  margin-bottom: 16px;
 }
 
 .multisearch-logo {
@@ -39,12 +39,20 @@
 
 .results-total {
   color: #b0b4ba;
-  margin-bottom: 0.9rem;
+  margin: 1.2rem 0 1.25rem;
   font-size: 0.88rem;
 }
 
+.result-group {
+  background-color: #ffffff;
+}
+
 .result-group .card-header {
-  background-color: #f8f9fa;
+  background-color: #ffffff;
+}
+
+.result-group .card-body {
+  background-color: #ffffff;
 }
 
 .group-title {
@@ -80,6 +88,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.results-section {
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) {
