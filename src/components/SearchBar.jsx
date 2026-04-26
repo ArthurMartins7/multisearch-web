@@ -11,7 +11,7 @@ function SearchBar({ searchText, setSearchText, onSearch, loading }) {
       <div className="input-group">
         <input
           type="text"
-          className="form-control"
+          className="form-control search-input"
           placeholder="Pesquise por pedidos, produtos ou equipamentos..."
           value={searchText}
           onChange={(event) => setSearchText(event.target.value)}

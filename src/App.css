@@ -29,7 +29,7 @@
 }
 
 .app-header {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .multisearch-logo {
@@ -88,6 +88,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.search-input::placeholder {
+  color: #bfc4ca;
+  opacity: 1;
 }
 
 .results-section {
