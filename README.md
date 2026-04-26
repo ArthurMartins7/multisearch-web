@@ -100,6 +100,12 @@ npm run build
 npm run preview
 ```
 
+## Acesso via web
+
+Se você quiser usar o projeto sem rodar localmente, basta acessar:
+
+- [https://multisearch-web.vercel.app/](https://multisearch-web.vercel.app/)
+
 ## Endpoint consumido
 
 O frontend consulta:
