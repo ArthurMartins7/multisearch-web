@@ -1,0 +1,101 @@
+.app-shell {
+  min-height: 100dvh;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.erp-layout {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.chrome-strip {
+  height: 62px;
+  background-color: #efefef;
+  flex-shrink: 0;
+}
+
+.search-panel {
+  flex: 1;
+  padding: 24px 20px 16px;
+}
+
+.search-content {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.app-header {
+  margin-bottom: 6px;
+}
+
+.multisearch-logo {
+  width: 170px;
+  height: auto;
+}
+
+.results-total {
+  color: #b0b4ba;
+  margin-bottom: 0.9rem;
+  font-size: 0.88rem;
+}
+
+.result-group .card-header {
+  background-color: #f8f9fa;
+}
+
+.group-title {
+  color: #1f1f1f;
+  font-weight: 700;
+}
+
+.group-meta,
+.empty-message {
+  color: #b0b4ba;
+}
+
+.result-id {
+  color: #be2f2f;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.result-id:hover {
+  color: #9b2121;
+}
+
+.result-item:last-child {
+  border-bottom: none !important;
+}
+
+.result-quantity {
+  color: #2d2d2d;
+}
+
+.search-icon-button {
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .erp-layout {
+    min-height: 100dvh;
+  }
+
+  .chrome-strip {
+    height: 42px;
+  }
+
+  .search-panel {
+    padding: 16px 12px;
+  }
+
+  .multisearch-logo {
+    width: 148px;
+  }
+}
