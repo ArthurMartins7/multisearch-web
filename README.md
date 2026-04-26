@@ -32,7 +32,7 @@ O usuário digita um termo e visualiza os resultados agrupados por tipo:
 
 - Node.js 18+ (recomendado: 20+)
 - npm
-- Backend do MultiSearch em execução
+- Acesso ao backend do MultiSearch (local ou publicado)
 
 ## Configuração de ambiente
 
@@ -47,10 +47,15 @@ Este projeto usa variáveis de ambiente do Vite para definir a URL da API.
 
 - `VITE_API_URL`: URL base da API
 
-Exemplo local:
+Backends disponíveis:
+
+- **Backend publicado (Railway)**: `https://multisearch-api-production.up.railway.app/multisearch`
+- **Backend local (opcional)**: `http://localhost:8080/multisearch`
+
+Exemplo de `.env` usando o backend publicado:
 
 ```env
-VITE_API_URL=http://localhost:8080/multisearch
+VITE_API_URL=https://multisearch-api-production.up.railway.app/multisearch
 ```
 
 No código, a configuração está em `src/services/api.js`:
@@ -70,7 +75,7 @@ npm install
 Crie o arquivo `.env` na raiz com:
 
 ```env
-VITE_API_URL=http://localhost:8080/multisearch
+VITE_API_URL=https://multisearch-api-production.up.railway.app/multisearch
 ```
 
 ### 3) Rodar em ambiente de desenvolvimento
@@ -94,18 +99,6 @@ npm run build
 ```bash
 npm run preview
 ```
-
-## Deploy na Vercel
-
-Na Vercel, configure a variável de ambiente:
-
-- `VITE_API_URL`
-
-Valor sugerido:
-
-- URL pública do seu backend, por exemplo: `https://api.seudominio.com/multisearch`
-
-Após configurar, faça um novo deploy para aplicar a variável.
 
 ## Endpoint consumido
 
